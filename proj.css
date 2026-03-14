@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0a7f5a, #0f9d6e);
+  color: white;
+  transition: 0.4s;
+}
+
+/* DARK MODE */
+.dark {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+}
+
+/* GLASS EFFECT */
+.glass {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  color: black;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.dark .card {
+  background: #1e1e1e;
+  color: white;
+}
+
+/* BUTTON */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #00c896;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* INPUT */
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  width: 90%;
+}
+
+/* GRID */
+#products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  #products {
+    flex-direction: column;
+  }
+}
